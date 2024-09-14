@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princip</title>
+</head>
+<body>
+    <style>
+        /* 1 */
+        .wrap {
+            border: solid 2px black;
+            width: 50vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        /* 1 */
+        .q {
+            width: 20%; 
+        }
+        /* 2,3 */
+        .w {
+            align-self: center;
+            max-width: 100%;
+            min-width: 0px;
+            max-height: max-content;
+            min-height: min-content;
+        }
+        /* 3 */
+        .e {
+            display: flex;
+            justify-content: end;
+        }
+        /* 5 */
+       @media (max-width: 800px) {
+        .s {
+            display: none;
+        }
+       }
+       /* 4,6 */
+       @media (min-width: 320px) and (max-width: 480px) {
+        .wrap {
+            width: 100%;
+            min-width: 0px;
+            max-width: 100%;
+        }
+       }
+       /* 4,6 */
+       @media (min-width: 481px) and (max-width: 768px) {
+        .wrap {
+            width: 100%;
+            min-width: 0px;
+            max-width: 100%;
+        }
+       }
+       /* 4,6 */
+       @media (min-width: 469px) and (max-width: 1024px) {
+        .wrap {
+            width: 100%;
+            min-width: 0px;
+            max-width: 100%;
+        }
+       }
+       /* 4,6 */
+       @media (min-width: 1025px) and (max-width: 1200px) {
+        .wrap {
+            width: 100%;
+            min-width: 0px;
+            max-width: 100%;
+        }
+       }
+       /* 5,6 */
+       @media (min-width: 1440px) and (max-width: 1920px) {
+        .wrap {
+            width: 100%;
+            min-width: 0px;
+            max-width: 100%;
+        }
+       }
+       
+        
+    </style>
+    <div class="wrap">
+    <div class="q"> 1.Використовування відносних одиниць вимірювання(%,em,rem,vh,vw)</div>
+    <div class="w"> 2.Використовування властивостей: min-width, max-width, min-height, max-height</div>
+    <div class="e"> 3.Використовування flexbox або Grid Layout</div>
+    <div class="a"> 4.Використання mediaquery: @media (min-width: 1440px) and (max-width: 1920px) {}</div>
+    <div class="s"> 5.Приховування елементів за допомогою mediaquery </div>
+    <div class="d"> 6.Використання підходу Mobile-first (верстка з меншого (мобилки))</div>
+    </div>
+
+    
+</body>
+</html>
